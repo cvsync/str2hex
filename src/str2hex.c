@@ -44,7 +44,7 @@ main(void)
 		ch = fgetc(stdin);
 		if ((ch == '\n') || (ch == EOF))
 			break;
-		if (isspace(ch) || (ch == ':'))
+		if (isspace(ch) || (ch == ':') || (ch == '-'))
 			continue;
 		if (!isxdigit(ch))
 			exit(EXIT_FAILURE);
